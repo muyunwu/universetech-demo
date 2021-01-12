@@ -1,0 +1,22 @@
+{
+  "name": "universetech",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.5",
+    "core-js": "^3.6.5",
+    "nuxt": "^2.14.6"
+  },
+  "devDependencies": {
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.1.0",
+    "stylus": "^0.54.8",
+    "stylus-loader": "^4.3.2"
+  }
+}
