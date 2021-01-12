@@ -1,12 +1,18 @@
+const routerBase =
+  process.env.DEPLOY_ENV === "GH_PAGES"
+    ? {
+        router: {
+          base: "universetech-demo"
+        }
+      }
+    : {};
 export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
   ssr: false,
 
   // Target (https://go.nuxtjs.dev/config-target)
   target: "static",
-  router: {
-    base: '/universetech-demo/'
-  },
+  ...routerBase,
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -23,7 +29,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: ['@/plugins/axios.js'],
+  plugins: ["@/plugins/axios.js"],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
